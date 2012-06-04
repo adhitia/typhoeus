@@ -239,6 +239,10 @@ module Typhoeus
     def self.head(url, params = {})
       run(url, params.merge(:method => :head))
     end
+    
+    def self.getexchangerate(url, params = {})
+      run(url, params.merge(:method => :getexchangerate))
+    end
 
   protected
 
